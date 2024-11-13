@@ -80,6 +80,7 @@ randDists = new Vector(numScan)
 
 objref scanRand
 scanRand = new Random(1e7) // theSeed is defined in init.hoc; not used
+scanRand.Random123()
 {
 	scanRand.uniform(0,1)
 }

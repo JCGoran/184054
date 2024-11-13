@@ -255,9 +255,12 @@ proc initchannels(){
 		
 	objref randGen,randGenAnat
 	randGen = new Random(theSeed)
+	randGen.Random123()
 	randGenAnat = new Random()
+	randGenAnat.Random123()
 	randGen.uniform(0,1)
 	randGenAnat = new Random(theSeed+1e6)
+	randGenAnat.Random123()
 	randGenAnat.uniform(0,1)
 	
 	objref ampa[numSyn],nmda[numSyn],ncAMPA[numSyn],ncNMDA[numSyn]
